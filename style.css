@@ -1,0 +1,61 @@
+html, body {
+	margin: 0; 
+	height: 100%;
+	overflow: hidden;
+	touch-action: manipulation;
+}
+
+body {
+	background-color: rgba(40, 40, 47, 1);
+	margin: 20px 20px;
+	padding-top: 20px;
+	font-family: monospace;
+}
+
+#game-container {
+	margin: auto auto;
+	width: 500px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+  #game-container {
+    width: 300px;
+  }
+}
+
+#game-board {
+	display: grid;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+}
+
+#game-stats {
+	padding-top: 20px;
+	margin: auto auto;
+}
+
+.card {
+  background-color: rgba(125, 125, 125, 0.1);
+  font-size: 30px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card.show-selected{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card.correct-guess{
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+.card.incorrect-guess{
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.card.show-correct{
+  background-color: rgba(255, 255, 255, 0.5);
+}
